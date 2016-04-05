@@ -31,8 +31,11 @@ $("form.choices").submit(function(event) {
     var inputTime = $('#time').val();
     var inputAge = parseInt($("input#age").val());
     var newTicket = new ticket(inputMovie, inputTime, inputAge);
-    $("#output").append("<p>" + newTicket.price() + "</p>");
-    
+
+    $("#output h4").text(inputMovie);
+    $("#price").text(newTicket.price());
+    $("p #time").text(inputTime);
+
 console.log(inputMovie);
   });
 });

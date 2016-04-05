@@ -5,30 +5,38 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.2.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Address book</title>
+    <title>Movie Tickets</title>
   </head>
-<body>
+    <body>
+      <h1>Movie Tickets</h1>
+      <div class="container">
+        <form class="choices">
 
+          <h3>Movies</h3>
+          <select id="movie" class="form-control" placeholder="Movies">
+            <option>Batman V Superman</option>
+            <option>Zootopia</option>
+            <option>My Big Fat Greek Wedding 2</option>
+            <option>Miracles From Heaven</option>
+            <option>The Divergent Series: Allegiant</option>
 
-  <div class="container">
+          </select>
 
-    <form class="choices">
-      <select id="movie" class="form-control">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      </select>
-      <select id="time" class="form-control">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-    <input id="age" type="text" class="form-control" placeholder="Age">
-    </form>
+          <h3>Times</h3>
+          <select id="time" class="form-control" placeholder="Times">
+            <option>10 am</option>
+            <option>2 pm</option>
+            <option>5 pm</option>
+            <option>7 pm</option>
+            <option>10 pm</option>
+          </select>
 
-  </div>
-</body>
+          <h3>Age</h3>
+          <input id="age" type="text" class="form-control" placeholder="Age">
+          <button type="submit" class="btn" name="button">Get Price!</button>
+        </form>
+
+        <div id="output">
+
+      </div>
+    </body>
